@@ -16,7 +16,7 @@ public class myservice {
      // JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/java_lab4_db";
     private static final String user = "root";
-    private static final String password = "vjzrjhjdf";
+    private static final String password = "***";
     // JDBC variables for opening and managing connection
     private static Connection con;
     private static Statement stmt;
