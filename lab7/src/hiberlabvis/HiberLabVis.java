@@ -25,7 +25,7 @@ public class HiberLabVis extends JFrame implements ActionListener {
     // JDBC URL, username and password of MySQL server
     String url = "jdbc:derby://localhost:1527/myjdb";
     String user = "root";
-    String password = "vjzrjhjdf";
+    String password = "***";
     Connection con;
     Session session;
 
