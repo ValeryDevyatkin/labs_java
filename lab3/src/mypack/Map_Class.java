@@ -5,16 +5,16 @@ import java.util.Map;
 public class Map_Class {
 	Map<String, String> abc = new HashMap<String, String>() {
 		{
-			put("картошка", "potato");
-			put("яблоко", "apple");
-			put("хлеб", "bread");
-			put("солнце", "sun");
-			put("сапог", "boot");
-			put("кот", "cat");
-			put("стена", "wall");
-			put("книга", "book");
-			put("стена", "wall");
-			put("сок", "juice");
+			put("РєР°СЂС‚РѕС€РєР°", "potato");
+			put("В¤Р±Р»РѕРєРѕ", "apple");
+			put("С…Р»РµР±", "bread");
+			put("СЃРѕР»РЅС†Рµ", "sun");
+			put("СЃР°РїРѕРі", "boot");
+			put("РєРѕС‚", "cat");
+			put("СЃС‚РµРЅР°", "wall");
+			put("РєРЅРёРіР°", "book");
+			put("СЃС‚РµРЅР°", "wall");
+			put("СЃРѕРє", "juice");
 		}
 	};
 	

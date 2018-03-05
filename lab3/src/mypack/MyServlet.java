@@ -63,7 +63,7 @@ public class MyServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body bgcolor='#aaccff'");
         out.println("<form>");
-        out.println("<h2> Привет клиенту!!!</h2><br><br>");
+        out.println("<h2> РџСЂРёРІРµС‚ РєР»РёРµРЅС‚Сѓ!!!</h2><br><br>");
         out.println("<b>");
         out.println("<h1>");
         out.println(
