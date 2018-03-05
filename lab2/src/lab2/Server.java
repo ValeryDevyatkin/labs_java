@@ -22,17 +22,17 @@ public class Server extends Thread implements Runnable{
 		while (true) {
 			if (server == null) 
 				try {
-					server = new ServerSocket(4444); // Номер сокета
-					System.out.println("Сервер:\nсокет инициализирован\n");
+					server = new ServerSocket(4444); // РќРѕРјРµСЂ СЃРѕРєРµС‚Р°
+					System.out.println("РЎРµСЂРІРµСЂ:\nСЃРѕРєРµС‚ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅ\n");
 				} catch (Exception e) {
-					System.out.println("Сервер:\nОшибка при инициализации\n" + e + "\n");
+					System.out.println("РЎРµСЂРІРµСЂ:\nРћС€РёР±РєР° РїСЂРё РёРЅРёС†РёР°Р»РёР·Р°С†РёРё\n" + e + "\n");
 				}
 			else 
 				try {
-					s = server.accept(); // ожидание соединения с клиентом
-					System.out.println("Сервер:\nСервер-клиент соединение установлено\n");
+					s = server.accept(); // РѕР¶РёРґР°РЅРёРµ СЃРѕРµРґРёРЅРµРЅРёСЏ СЃ РєР»РёРµРЅС‚РѕРј
+					System.out.println("РЎРµСЂРІРµСЂ:\nРЎРµСЂРІРµСЂ-РєР»РёРµРЅС‚ СЃРѕРµРґРёРЅРµРЅРёРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ\n");
 				} catch (Exception e) {
-					System.out.println("Сервер:\nОшибка при соединении\n" + e + "\n");
+					System.out.println("РЎРµСЂРІРµСЂ:\nРћС€РёР±РєР° РїСЂРё СЃРѕРµРґРёРЅРµРЅРёРё\n" + e + "\n");
 				}
 		}+
 	}
@@ -41,9 +41,9 @@ public class Server extends Thread implements Runnable{
 		try {
 			server.close();
 			server = null;
-			System.out.println("Сервер:\nПорт закрыт\n");
+			System.out.println("РЎРµСЂРІРµСЂ:\nРџРѕСЂС‚ Р·Р°РєСЂС‹С‚\n");
 		} catch (Exception e) {
-			System.out.println("Сервер:\nОшибка при закрытии\n" + e + "\n");
+			System.out.println("РЎРµСЂРІРµСЂ:\nРћС€РёР±РєР° РїСЂРё Р·Р°РєСЂС‹С‚РёРё\n" + e + "\n");
 		}
 	}
 	
@@ -84,7 +84,7 @@ public class Server extends Thread implements Runnable{
 					System.out.println(buf2.elementAt(i));
 			}
 		} catch(Exception e) {
-			System.out.println("Сервер:\nИсключение\n" + e + "\n");
+			System.out.println("РЎРµСЂРІРµСЂ:\nРСЃРєР»СЋС‡РµРЅРёРµ\n" + e + "\n");
 		}
 	}
 }

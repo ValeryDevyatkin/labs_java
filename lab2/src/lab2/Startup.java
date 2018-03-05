@@ -140,7 +140,7 @@ public class Startup extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent ae) {
 		Button x = (Button)ae.getSource();
 		switch(x.getName()) {
-		//кнопка запуска сервера -------------------------------------------------------------
+		//РєРЅРѕРїРєР° Р·Р°РїСѓСЃРєР° СЃРµСЂРІРµСЂР° -------------------------------------------------------------
 			case "bsrv":
 				if (x.getLabel() == "Start") { 
 					try {
@@ -181,7 +181,7 @@ public class Startup extends JFrame implements ActionListener{
 					scl2.setEnabled(false);
 				}
 			break;	
-		//кнопка подключения первого клиента -------------------------------------------------
+		//РєРЅРѕРїРєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ РїРµСЂРІРѕРіРѕ РєР»РёРµРЅС‚Р° -------------------------------------------------
 			case "bcl1":
 				if (x.getLabel() == "Connect") { 
 					try {
@@ -196,7 +196,7 @@ public class Startup extends JFrame implements ActionListener{
 						lcl1.setBackground(Color.GREEN);
 						scl1.setEnabled(true);
 					}
-					//сервер отправляет клиенту 1 сообщение 
+					//СЃРµСЂРІРµСЂ РѕС‚РїСЂР°РІР»СЏРµС‚ РєР»РёРµРЅС‚Сѓ 1 СЃРѕРѕР±С‰РµРЅРёРµ 
 					if (bsrv.getLabel() != "Start") {
 						srv.send(1);
 						String msg = cl1.recieve();
@@ -213,7 +213,7 @@ public class Startup extends JFrame implements ActionListener{
 					scl1.setEnabled(false);
 				}
 			break;
-		//кнопка подключения второго клиента -------------------------------------------------
+		//РєРЅРѕРїРєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ РІС‚РѕСЂРѕРіРѕ РєР»РёРµРЅС‚Р° -------------------------------------------------
 			case "bcl2":
 				if (x.getLabel() == "Connect") { 
 					try {
@@ -228,7 +228,7 @@ public class Startup extends JFrame implements ActionListener{
 						lcl2.setBackground(Color.GREEN);
 						scl2.setEnabled(true);
 					}
-					//сервер отправляет клиенту 2 сообщение
+					//СЃРµСЂРІРµСЂ РѕС‚РїСЂР°РІР»СЏРµС‚ РєР»РёРµРЅС‚Сѓ 2 СЃРѕРѕР±С‰РµРЅРёРµ
 					if (bsrv.getLabel() != "Start") {
 						srv.send(2);
 						String msg = cl2.recieve();

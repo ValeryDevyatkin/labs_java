@@ -24,9 +24,9 @@ public class Client extends Thread implements Runnable{
 			if (s == null || s.isClosed())
 				try {
 					s = new Socket("127.0.0.1", 4444);
-					System.out.println("Љлиент " + name + ":\nсокет инициализирован\n");
+					System.out.println("РљР»РёРµРЅС‚ " + name + ":\nСЃРѕРєРµС‚ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅ\n");
 				} catch (Exception e) {
-					System.out.println("Љлиент " + name + ":\nЋшибка при инициализации\n" 
+					System.out.println("РљР»РёРµРЅС‚ " + name + ":\nРћС€РёР±РєР° РїСЂРё РёРЅРёС†РёР°Р»РёР·Р°С†РёРё\n" 
 							+ e + "\n");
 				}
 		}
@@ -36,9 +36,9 @@ public class Client extends Thread implements Runnable{
 		try {
 			s.close();
 			s = null;
-			System.out.println("Љлиент " + name + ":\n‘окет закрыт\n");
+			System.out.println("РљР»РёРµРЅС‚ " + name + ":\nРЎРѕРєРµС‚ Р·Р°РєСЂС‹С‚\n");
 		} catch(Exception e) {
-			System.out.println("Љлиент " + name + ":\nЋшибка при закрытии\n" + e + "\n");
+			System.out.println("РљР»РёРµРЅС‚ " + name + ":\nРћС€РёР±РєР° РїСЂРё Р·Р°РєСЂС‹С‚РёРё\n" + e + "\n");
 		}
 	}
 	
