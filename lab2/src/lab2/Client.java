@@ -24,9 +24,9 @@ public class Client extends Thread implements Runnable{
 			if (s == null || s.isClosed())
 				try {
 					s = new Socket("127.0.0.1", 4444);
-					System.out.println("Клиент " + name + ":\nсокет инициализирован\n");
+					System.out.println("Љлиент " + name + ":\nсокет инициализирован\n");
 				} catch (Exception e) {
-					System.out.println("Клиент " + name + ":\nОшибка при инициализации\n" 
+					System.out.println("Љлиент " + name + ":\nЋшибка при инициализации\n" 
 							+ e + "\n");
 				}
 		}
@@ -36,9 +36,9 @@ public class Client extends Thread implements Runnable{
 		try {
 			s.close();
 			s = null;
-			System.out.println("Клиент " + name + ":\nСокет закрыт\n");
+			System.out.println("Љлиент " + name + ":\n‘окет закрыт\n");
 		} catch(Exception e) {
-			System.out.println("Клиент " + name + ":\nОшибка при закрытии\n" + e + "\n");
+			System.out.println("Љлиент " + name + ":\nЋшибка при закрытии\n" + e + "\n");
 		}
 	}
 	

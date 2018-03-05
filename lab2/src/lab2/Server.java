@@ -34,7 +34,7 @@ public class Server extends Thread implements Runnable{
 				} catch (Exception e) {
 					System.out.println("Сервер:\nОшибка при соединении\n" + e + "\n");
 				}
-		}
+		}+
 	}
 	
 	public void closeSocket() {

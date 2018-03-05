@@ -154,20 +154,10 @@ public class Startup extends JFrame implements ActionListener{
 					if (bcl2.getLabel() != "Connect") {
 						lcl2.setBackground(Color.GREEN);
 						scl2.setEnabled(true);
-						//											/!
-//						srv.send(2);
-//						String msg = cl2.recieve();
-//						if (msg != "")
-//							tcl2.setText(msg + tcl2.getText());
 					}
 					if (bcl1.getLabel() != "Connect") {
 						lcl1.setBackground(Color.GREEN);
 						scl1.setEnabled(true);
-						//											/!
-//						srv.send(1);
-//						String msg = cl1.recieve();
-//						if (msg != "")
-//							tcl1.setText(msg + tcl1.getText());
 					}
 				}
 				else 
@@ -206,7 +196,7 @@ public class Startup extends JFrame implements ActionListener{
 						lcl1.setBackground(Color.GREEN);
 						scl1.setEnabled(true);
 					}
-					//сервер отправляет клиенту 1 сообщение
+					//сервер отправляет клиенту 1 сообщение 
 					if (bsrv.getLabel() != "Start") {
 						srv.send(1);
 						String msg = cl1.recieve();
